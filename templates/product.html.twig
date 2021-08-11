@@ -1,0 +1,29 @@
+
+{% extends "layout.html.twig" %} 
+
+{% block content  %}
+<h1>product</h1>
+
+<div class="product-list">
+<div>
+<li>{{ product.name }}</li>
+<li>{{ product.price }}</li>
+<li>{{ product.description }}</li>
+<form method="post">
+ {% if inBasket %}
+<button class="btn btn-danger" dasabled>Added to basket</button>
+{% else %}
+<button class="btn btn-success btn-sm">Add to basket</button>
+{% endif %}
+
+</form
+</div>
+<br>
+
+
+</div>
+
+
+
+
+{% endblock %}
